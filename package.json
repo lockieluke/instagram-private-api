@@ -22,6 +22,7 @@
   "homepage": "https://github.com/dilame/instagram-private-api",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "postinstall": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "typecheck": "tsc -p tsconfig.build.json --noEmit",
